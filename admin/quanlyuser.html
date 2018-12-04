@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+</head>
+<script type="text/javascript" src="JS/xulidangnhap.js"></script>
+<style>
+	tr td{padding:10px}
+table{
+	border-collapse:collapse;
+	border:solid 1px dodgerBlue;}
+li a:last-child{margin-right:0px}
+</style>
+<body>
+<div style="min-height:100%; width:100%; ">
+	<div>&nbsp;</div>
+    <div style="width:100%; height:39px;border-top: solid 1px dodgerBlue; background-color:#FFF;">
+    	<div class="header" style="float:left; width:10%; padding:5px 10px 1px 10px; font-size:25px; font-family:Raleway, Arial, sans-serif foggy-background:;"></div>
+        <div style="heigth:auto; background-color:#FFF">
+        	
+            <div style="float:right; display:inline-block; background-color:white" id="loginout">   			                                   	
+                    <div style="float:right"><a href="../index.html"><input type="button" name="" value="Đăng xuất" /></a></div>                <div style="float:right; padding:10px 15px">ADMIN</div>
+                	                
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;clear:both;" >
+    	<ul>
+       	  <li style="margin-left:155px"><a href="index.html">XÓA SẢN PHẨM</a></li>
+            <li><a href="themsanpham.html">THÊM SẢN PHẨM</a></li>
+            <li><a href="suasanpham.html">SỬA SẢN PHẨM</a></li>
+            <li><a href="quanlydonhang.html" >QUẢN LÝ ĐƠN HÀNG</a></li>
+            <li><a href="thongke.html">THỐNG KÊ</a></li>
+            <li><a href="quanlyuser.html" class="active">QUẢN LÝ USER</a></li>
+        </ul>	
+    </div>
+    
+    <div align="center" style="margin:20px; border:solid 1px dodgerBlue; width:90%; margin-left:60px; height:auto; border-radius:4px" >
+        <div style="float:left;background-color:#9F3;width:30%;border-right:solid 1px dodgerBlue">tên user</div>
+        <div style="float:left;background-color:#9F3; width:30%; border-right:solid 1px dodgerBlue">mật khẩu</div>
+        <div style="float:left;background-color:#9F3; width:10%; border-right:solid 1px dodgerBlue">xóa tài khoản</div>
+		<div style="float:left;background-color:#9F3; width:29.6%; border-right:solid 1px dodgerBlue; border-radius:4px">Reset mật khẩu</div>
+    	<div id="qlus"></div>
+        <div style="clear:both;"></div>
+    </div>
+    <script>
+		        document.getElementById("qlus").innerHTML=quanli;
+	</script>
+</body>
+</html>

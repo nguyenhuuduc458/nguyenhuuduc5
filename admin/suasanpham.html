@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script type="text/javascript"src="JS/listsuasanpham.js"> </script>
+
+
+</head>
+<body marginwidth="0px;">
+<div style="min-height:100%; width:100%">
+	<div>&nbsp;</div>
+    <div style="width:100%; height:39px; background-color:#FFF;border-top:solid 1px dodgerBlue;">
+        <div style="heigth:auto;  background-color:#FFF">
+        	
+            <div style="float:right; display:inline-block; background-color:white" id="loginout">
+   			                                   	
+                    <div style="float:right"><a href="../index.html"><input type="button" name="" value="Đăng xuất" /></a></div>                <div style="float:right; padding:10px 15px">ADMIN</div>
+                	                
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;clear:both;" >
+    	<ul>
+       	  <li style="margin-left:155px"><a href="index.html" >XÓA SẢN PHẨM</a></li>
+            <li><a href="themsanpham.html">THÊM SẢN PHẨM</a></li>
+            <li><a href="suasanpham.html"  class="active">SỬA SẢN PHẨM</a></li>
+            <li><a href="quanlydonhang.html">QUẢN LÝ ĐƠN HÀNG</a></li>
+            <li><a href="thongke.html">THỐNG KÊ</a></li>
+            <li><a href="quanlyuser.html" style="float:right">QUẢN LÝ USER</a></li>
+        </ul>	
+    </div>
+   	<div style="width:100%">
+    	<div class="leftmenu">
+    	<div style="text-align:center; padding:10px 10px; color:#F00; font-style:bold">*DANH MỤC SẢN PHẨM*</div>
+        
+    	<div style="float:left; color:#F00; padding:10px 10px;">LATOP ASUS</div>
+       	<div id="noidung2">
+		<script>
+			document.getElementById("noidung2").innerHTML=chuoi;
+			</script>
+			</div>
+        <div style="float:left; color:#F00; padding:10px 10px;clear:both">LATOP LENOVO</div>
+        <div id="noidung3" >
+		 	<script>
+        document.getElementById("noidung3").innerHTML=chuoi2;
+        </script>
+        </div>
+    
+    
+        <div style="float:left; color:#F00; padding:10px 10px;clear:both">LATOP MSI</div>
+        <div id="noidung4" >
+		<script>
+	document.getElementById("noidung4").innerHTML=chuoi3;
+	</script>
+    </div>
+    
+        <div style="float:left; color:#F00; padding:10px 10px;clear:both">LATOP DELL</div>
+        <div id="noidung5">
+		<script>
+	document.getElementById("noidung5").innerHTML=chuoi4;
+	</script>
+    </div>
+        <div style="float:left; color:#F00; padding:10px 10px;clear:both">LATOP ACER</div>
+        <div id="noidung6">
+		<script>
+	document.getElementById("noidung6").innerHTML=chuoi5;
+	</script>
+    </div>
+    </div>
+   
+   <table id="myDIV" style="margin-left:35%;margin-top:10%;background-color:rgba(0,0,0,0.8)">
+   		<tr>
+        	<td style="text-align:center;padding:10px;"><strong>Nhập thông tin cần sửa</strong></td>
+        </tr>
+    	<tr>
+        	<td>
+            	Nhập mã sản phẩm
+            </td>	
+            <td>
+            	<input type="text" name="" value=""  placeholder="mã sp"/>
+            </td>
+        </tr>
+       	<tr>
+        	<td>
+            	Nhập tên sản phẩm
+            </td>
+            <td>
+            	<input type="text" name="" value="" placeholder="tên sp" />
+            </td>
+        </tr>
+        <tr>
+        	<td>	
+            	Nhập giá sản phẩm
+            </td>
+            <td>
+            	<input type="text " name="" value="" placeholder="giá sản phẩm"/>
+            </td>
+        </tr>
+   		<tr>
+        	<td>Chọn hình ảnh:</td>
+        	<td>
+            	<input type="file" name ="" value="" />
+            </td>
+        </tr> 
+        <tr>
+        	<td align="center">
+            	<button name="" onclick="uploadsua()" style="padding:10px">Upload</button>
+                <button name="" onclick="noneup()" style="padding:10px">Hủy</button>
+            </td>
+        </tr>     
+   </table>
+   	  <div style="width:80%;float:left; min-height:100%;position:relative; overflow:visible" >
+       	<div style=" background-color:white; margin-left:20%;margin-top:10px">
+            	<form action="#" method="t">
+            	<input type="search" name="" id ="timkiem" value="" placeholder="Nhập sản phẩm cần sửa" size="50px" />
+            	<input type="button" name="" value="Tìm Kiếm" onclick="timsanphamcoban()"/>
+              	
+               	</form>           
+            </div>
+        	<div id="listeach">
+           	 <script>
+             window.onload=layurl();
+             document.getElementById("listeach").innerHTML=lie;
+             </script>
+              
+            </div>
+            <div style="padding-bottom:150px;height:100px;">&nbsp;</div>
+            <div style="padding-bottom:150px;height:100px;"id="sotrang">
+     		<script>
+			document.getElementById("sotrang").innerHTML=lienket;
+			</script>
+            </div>
+            <div id="snackbar">Đã sửa xong</div>
+      </div>  
+       <div class="footer">
+        	<div style="width:auto;"><hr maxlength="100%"/></div>
+            <div class="footer-child">
+            	<p>THÔNG TIN LIÊN HỆ</p>
+            	<p>KẾT NỐI VỚI CHÚNG TÔI</p>
+                <p>HÌNH ẢNH BẢN ĐỒ</p>
+            </div>
+            <div style="width:auto;clear:both; height:18px"><hr maxlength="100%"/></div>
+            <div style="clear:both;width:100%;">
+            	<div style="width:25%; margin-left:20px;float:left; border-right:solid 1px #999999">
+                	<span><i class="fas fa-envelope">&nbsp;Email:</i><a href="mailto:ShopingComputer225@gmail.com">ShopingComputer225@gmail.com</a></span>
+                    <span><i class="fas fa-map-marked-alt">&nbsp;Address:</i><br />
+                    <i><a href="https://www.google.com/maps">Nguyen Huu Tho,Tan Hung Ward,Dist.7,HCMC</a></i></span>
+                    <div><i class="fas fa-phone">&nbsp;Hotline:</i><br />
+                    0123456789</div>
+                </div>
+                
+                <div style="width:25%;float:left; margin-left:70px; border-right: #999 solid 1px; height:123px">
+                	<div style="width:100%;">
+                    	<div style="float:left; margin-left:10px;"><a href="https://www.facebook.com/"><img src="Images/facebook.png" /></a></div>
+                    	<div style="float:left; margin-left:10px;"><a href="https://www.google.com/"><img src="Images/google.png" /></a></div>
+                    	<div style="float:left; margin-left:10px;"><a href="https://www.youtube.com/?gl=VN"><img src="Images/youtube.png" /></a></div> 
+                    </div>
+                    <div style="width:100%; clear:both">&nbsp;</div>
+                  	<div style="width:100%; clear:both;">
+                    	<div style="float:left; margin-left:10px;"><a href="https://www.instagram.com/"><img src="Images/instagram.png" /></a></div>
+                    	<div style="float:left; margin-left:10px;"><a href="https://twitter.com/?lang=vi"><img src="Images/twitter.png" /></a></div>
+                    	<div style="float:left; margin-left:10px;"><a href="www.in.com"><img src="Images/in.png" /></a></div>
+                    </div>
+                </div>
+                
+                <div style="float:left; margin-left:48px; width:auto">
+                	  <img src="Images/map.jpg"  width="200px" height="120px;"/>
+                 </div>
+            </div>            
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/styleRegister.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script type="text/javascript" src="JS/xulidangnhap.js"></script>
+<script>
+
+
+</script>
+</head>
+<body class="allbody">
+<form id="dangky" method="post" onsubmit="return pushtk( document.getElementById('tk').value , document.getElementById('password1').value )">
+
+<div><a href="index.html"><i class="fas fa-home fa-2x" style="float:left;color:black">Home</i></a></div>
+<div><h1>Register Account</h1></div>
+<div class="content">
+<div>
+<fieldset>
+	<legend class="row1">Account Details</legend>
+  	<div style="height:auto">
+    	<div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" > Acount*</div>
+        <div style="float:right; width:75%; " align="left">
+        	<input type="text" name="email" id="tk" value="" placeholder="Acount" required="required">
+        </div>
+    </div>
+   	<div>&nbsp;</div>
+    <div style="height:auto">
+    	<div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" > Password*</div>
+        <div style="float:right; width:75%; " align="left">
+        	<input type="password" value="" placeholder="Password" required="required" id="password1" onchange="checkpw1()">   
+        </div>
+    </div>
+    <div>&nbsp;</div>
+    <div style="height:auto">
+    	<div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" > Re-Password*</div>
+        <div style="float:right; width:75%; " align="left">
+        	<input type="password" value="" placeholder="Re-Password" required="required" id="password2" onchange="validateForm()">
+        </div>
+    </div>
+</fieldset>
+</div>
+<div>&nbsp;</div>
+<div>
+	<fieldset>
+    	<legend class="row1">Personal Detail</legend>
+        <div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" >Name*</div>
+        <div style="float:right; width:75%; " align="left">
+        <input type="text" name="User" value="" placeholder="Name" required="required"></div>
+        <div>&nbsp;</div>
+        <div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" >Phone*</div>
+        <div style="float:right; width:75%; " align="left">
+        <input type="text" name="Phone" value="" placeholder="PhoneNumber" required="required"></div>
+        <div>&nbsp;</div>
+        <div style="float:left; width:25%; padding-right:0px; padding-top:10px; padding-bottom:12px" align="right" >Address*</div>
+        <div style="float:right; width:75%; " align="left">
+        <input type="text" name="address" value="" placeholder="Address" required="required"></div>      
+    </fieldset>
+</div>
+<div>&nbsp;</div>
+<div>
+	<fieldset>
+    	<legend class="row1">Further Infomation</legend>
+        <div style="float:left; width:25%; padding-top:2px" align="right" >Gender*</div>
+        <div style="float:right; width:75%;" align="left">
+        <input type="radio" name="gender" value="male">Nam
+        <input type="radio" name="gender" value="female" />Nữ</div> 
+        <div>&nbsp;</div>
+        <div style="float:left; width:25%; padding-top:2px;" align="right">Birthdate*</div>
+        <div style="float:right; width:75%;" align="left">
+        	<select name="NgaySinh" class="date">
+            	<option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+            </select>
+            <select name="thangSinh" class="date">
+            	<option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+            </select>
+            <input type="textarea" name="NamSinh" value="" class="date"/>
+        </div>    
+    </fieldset>
+    <div>&nbsp;</div>
+    <div style="float:center">
+    	<input type="submit"  value="Register" />
+    </div>
+</div>
+</div>
+<p>&nbsp;</p>
+</body>
+</form>
+
+</html>

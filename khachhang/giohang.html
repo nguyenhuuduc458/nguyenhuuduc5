@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="JS/xuligiohang.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="margin:0; padding:0; height:100%;">
+<div style="position:relative; min-height:100%; width:100%; ">
+<div style="width:100%; height:auto; padding-bottom:300px;">
+        <div><a href="index.html"><i class="fas fa-home fa-1.5x" style="color:gray">Home</i></a></div>
+        <div>&nbsp;</div>
+        <div style="text-align:center; border: solid 1px; background-color:#CCC" ><h4>Giỏ hàng của bạn</h4></div>
+        <div>&nbsp;</div>
+        <div style="float:left; border-radius:12px;border: Tomato solid;width:50%" id="gh"></div>
+        <div style="float:left;margin-left:60px;width:35%; border-radius:12px ; border: Tomato solid">
+        <div style="border-bottom:tomato solid"><p>Tổng tiền thanh toán:</p></div>
+       
+        <div style="border-bottom:tomato solid;padding:10px"  id="money"></div>
+        
+        <div align="center">
+        <input type="button" style="border:none;border-radius:5px; padding:10px;background-color:red; color:white" align="center" onclick="thanhtoan()" value="Thanh toán" >
+        <div id="snackbar">Thanh toán thành công! Hàng sẽ có muộn nhất 3 ngày</div>
+        </div>
+         <script>
+        document.getElementById("gh").innerHTML=s;
+        document.getElementById("money").innerHTML=tongtien+ "đ";
+        </script>
+</div>
+
+  <div class="footer" style="margin-top:500px">
+       	<div style="width:auto;"><hr maxlength="100%"/></div>
+        
+        <div class="footer-child">
+           	<p style="margin-left:100px;">THÔNG TIN LIÊN HỆ</p>
+           	<p style="margin-left:100px;">KẾT NỐI VỚI CHÚNG TÔI</p>
+            <p style="margin-left:140px;">HÌNH ẢNH BẢN ĐỒ</p>
+        </div>
+        
+        <div style="width:auto;clear:both; height:18px"><hr maxlength="100%"/></div>
+        <div style="clear:both;width:100%;">
+           	<div style="width:25%; margin-left:20px;float:left; border-right:solid 1px #999999; height:123px">
+               	<span><i class="fas fa-envelope">&nbsp;Email:<br /></i><a href="mailto:ShopingComputer225@gmail.com">ShopingComputer225@gmail.com</a></span>
+                <span><i class="fas fa-map-marked-alt">&nbsp;Address:</i><br />
+                <i><a href="https://www.google.com/maps">Nguyen Huu Tho,Tan Hung Ward,Dist.7,HCMC</a></i></span>
+                <div><i class="fas fa-phone">&nbsp;Hotline:</i><br />
+                0123456789</div>
+            </div>
+                
+            <div style="width:25%;float:left; margin-left:70px; border-right: #999 solid 1px; height:123px">
+               	<div style="width:100%;">
+                   	<div style="float:left; margin-left:10px;"><a href="https://www.facebook.com/"><img src="Images/facebook.png" /></a></div>
+                   	<div style="float:left; margin-left:10px;"><a href="https://www.google.com/"><img src="Images/google.png" /></a></div>
+                   	<div style="float:left; margin-left:10px;"><a href="https://www.youtube.com/?gl=VN"><img src="Images/youtube.png" /></a></div> 
+                </div>
+                <div style="width:100%; clear:both">&nbsp;</div>
+               	<div style="width:100%; clear:both;">
+                   	<div style="float:left; margin-left:10px;"><a href="https://www.instagram.com/"><img src="Images/instagram.png" /></a></div>
+                   	<div style="float:left; margin-left:10px;"><a href="https://twitter.com/?lang=vi"><img src="Images/twitter.png" /></a></div>
+                   	<div style="float:left; margin-left:10px;"><a href="www.in.com"><img src="Images/in.png" /></a></div>
+                </div>
+            </div>
+                
+            <div style="float:left; margin-left:48px; width:auto">
+               	  <img src="Images/map.jpg"  width="200px" height="120px;"/>
+            </div>
+        </div>            
+    </div>
+</div>
+</body>
+</html>

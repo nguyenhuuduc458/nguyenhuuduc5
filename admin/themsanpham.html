@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+	function confirm1(){
+		var s = confirm("bạn có chắc chắn muốn thêm");
+		if(s==true)
+		{
+			alert("đã thêm");
+	
+		}
+	}
+</script>
+<div style="min-height:100%; width:100%; ">
+	<div>&nbsp;</div>
+    <div style="width:100%; height:39px;border-top: solid 1px dodgerBlue; background-color:#FFF;">
+    	<div class="header" style="float:left; width:10%; padding:5px 10px 1px 10px; font-size:25px; font-family:Raleway, Arial, sans-serif foggy-background:;"></div>
+        <div style="heigth:auto; background-color:#FFF">
+        	
+            <div style="float:right; display:inline-block; background-color:white" id="loginout">   			                                   	
+                    <div style="float:right"><a href="../index.html"><input type="button" name="" value="Đăng xuất" /></a></div>                <div style="float:right; padding:10px 15px">ADMIN</div>
+                	                
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;clear:both;" >
+    	<ul>
+       	  <li style="margin-left:155px"><a href="index.html">XÓA SẢN PHẨM</a></li>
+            <li><a href="themsanpham.html"class="active">THÊM SẢN PHẨM</a></li>
+            <li><a href="suasanpham.html">SỬA SẢN PHẨM</a></li>
+            <li><a href="quanlydonhang.html">QUẢN LÝ ĐƠN HÀNG</a></li>
+            <li><a href="thongke.html">THỐNG KÊ</a></li>
+            <li><a href="baotri.html" style="float:right">QUẢN LÝ USER</a></li>
+        </ul>	
+    </div>
+    <form onsubmit="return confirm1()">
+    <div style="width:100%; height:auto;">
+    	<div>&nbsp;</div>
+    	<div style="margin-left:24%;border:solid 1px dodgerBlue; width:50%; height:auto; clear:both">
+            <div style="border-bottom:solid 1px dodgerBlue;">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập mã sản phẩm:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="MASP" style="height:20px; width:auto; " required="required" /></div>
+            </div>
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập tên sản phẩm:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="TÊNSP"  style="height:20px; width:auto;" required="required"/></div>
+            </div>
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập số lượng:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="số lượng"  style="height:20px; width:auto;" required="required"/></div>
+            </div>  
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập giá sản phẩm:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="GIASP"  style="height:20px; width:auto;" required="required"/></div>
+            </div>
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập loại SP:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="LOAISP"  style="height:20px; width:auto;" required="required"/></div>
+            </div>
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">nhập nhà cung cấp:</div>
+                <div style="float:left; width:auto; padding:7px;"><input type="text" name="" value="" placeholder="NHACUNGCAPSP"  style="height:20px; width:auto;" required="required"/></div>
+            </div>
+            <div style="border-bottom:solid 1px dodgerBlue;clear:both">
+            	<div style="float:left; width:25%; padding:10px; font-size:18px; border-right:solid 1px dodgerBlue;text-align:right;">hình ảnh sản phẩm:</div>
+                <div style="float:left; width:auto; padding:7px;">
+                <input type="file" required="required"/>
+                </div>
+            </div>  
+            <div style="border-top:solid 1px dodgerBlue;clear:both; padding:10px" align="center">
+               	<input type="submit"  value="Upload"/>
+           </div>        	
+        </div>
+    </div>
+    <div id="snackbar">Thêm thành công</div>
+ 
+    </form>
+    
+</body>
+</html>

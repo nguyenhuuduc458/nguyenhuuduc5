@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.allbody{
+	background:url(../Images/techandall_wallpaper_1.jpg);
+	background-position:center;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:#FFF;
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+}
+div h1{
+	letter-spacing:7px;
+	font-weight:300;
+	font-size:45px;
+	padding-top:20px;
+}
+.content{
+	width:50%;
+	background:rgba(0,0,0,0.5);
+	margin:auto;
+	padding:40px;
+}
+input[type="email"],input[type="password"],input[type="text"]{
+	width:84%;
+	border:#FF8B53 solid 2px;
+	background:transparent;
+	padding:10px 15px 10px;
+	color:white;
+	
+}
+.date{
+	width:20%;
+	border:#FF8B53 solid 2px;
+}
+input[type="submit"]{
+	width:30%;
+	height:80%;
+	border:#FFF solid 1px;
+	background:#FF8B53;
+	color:#FFF;
+	font-size:26px;	
+	border:none;
+	border-radius:0px;
+	
+}
+input[type="submit"]:hover{
+	background:#FFF;
+	color:#FF8B53;
+	transition: 0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+}
+.row1 {
+	text-align:left;
+	font-size:25px;
+	color:#FF8B53;
+	border:#FF8B53 solid 1px;
+}
+

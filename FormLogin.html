@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="CSS/styleLogin.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="JS/xulidangnhap.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="CSS/template.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="body">
+<div><a href="index.html"><i class="fas fa-home fa-2x" style="color:black">Home</i></a></div>
+<h1>LOGIN ACCOUNT</h1>
+<form onsubmit="return Login();" id="dangnhap" Method="post"  >
+<div class="content">
+	<h2>lOGIN HERE</h2>
+	<div align="center"><input type="text" name="UserName" placeholder="USER"required="required" id="userName"/></div>
+    <div>&nbsp;</div>
+	<div align="center"><input type="password" name="Password" placeholder="PASSWORD" required="required" id="login" /></div>
+    <div>
+    	<div style="float:left; margin-left:15px"><input type="checkbox" name="" value="" id="check"/>
+        <label for="check">
+        <span></span>
+        Remember me
+        </label>
+        </div>
+        <div style="float:right; margin-left:15px"><a href="#">Forgot password?</a></div> 
+   </div>
+   <div>&nbsp;</div>
+   <div style="float:center; padding-top:50px" align="center"> 
+     <input type="submit" value="LOGIN""/>
+   </div>
+  </form>
+   <div style="padding-top:40px; width:auto;clear:both"> 
+   <p>
+   	 To Register New Account 
+   <span> → </span><a href="FormRegister.html" class="btn">&nbsp;Click Here </a>
+   </p>  	
+   </div>
+</div>
+
+</body>
+</html>

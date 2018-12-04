@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+.body{
+	background:url(../Images/techandall_wallpaper_1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	color:#FFF;
+	font-family: 'Quicksand', sans-serif;
+}
+h1{
+	padding-top:50px;
+	font-size:45px;
+	text-align:center;
+	font-weight:300;
+	letter-spacing:7px;
+}
+.content{
+	width: 30%;
+    margin: auto;
+    background: rgba(0,0,0, 0.4);
+    padding: 40px;
+}
+h2{
+	font-size:30px;
+	font-weight:300;
+	text-align:center;
+	color:#FFF;
+	text-transform:uppercase;
+	letter-spacing:7px;
+}
+a{
+	text-decoration:none;
+	color:#FFF;
+}
+div a:hover{
+	color:#FF8B53;
+	border-color:#FF8B53;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+input[type="password"],input[type="text"]{
+	width:84%;
+	padding:15px 10px 15px;
+	border: #FF8B53 solid 2px;
+	margin-bottom:26px;
+	background:transparent;
+	font-family: 'Quicksand', sans-serif;
+}
+input[type="text"]{
+	background:url(../Images/e-mail.png) no-repeat 320px 11px;
+	background-size:25px;
+}
+input[type="password"]{
+	background:url(../Images/password.png) no-repeat 320px 11px;
+	background-size:25px;
+}
+input[type="submit"]{
+    font-size: 16px;
+	padding: 10px 65px ;
+	background-color:#FF8B53;
+	color: #FFF;
+	border-radius: 4px;
+	border:none;
+	float:center;
+}
+input[type="submit"] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+input[type="submit"]:hover{
+	background-color:#FFF;
+	color:#FF8B53;
+}
+.btn{
+	border:#FFF solid 1px;
+	padding:10px 10px 10px 10px;	
+}
+.btn{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
